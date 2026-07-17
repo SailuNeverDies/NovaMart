@@ -1,0 +1,41 @@
+{
+  "name": "novamart",
+  "version": "1.0.0",
+  "description": "NovaMart - Premium E-Commerce Platform",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:push": "prisma db push",
+    "db:seed": "node prisma/seed.js",
+    "db:studio": "prisma studio",
+    "db:reset": "prisma db push --force-reset && node prisma/seed.js",
+    "setup": "npm install && prisma generate && prisma db push && node prisma/seed.js"
+  },
+  "dependencies": {
+    "@auth/prisma-adapter": "^2.10.0",
+    "@prisma/client": "^6.9.0",
+    "@stripe/react-stripe-js": "^3.1.1",
+    "@stripe/stripe-js": "^5.8.0",
+    "bcryptjs": "^3.0.2",
+    "focus-trap-react": "^11.0.2",
+    "meilisearch": "^0.58.0",
+    "next": "^15.3.4",
+    "next-auth": "^5.0.0-beta.29",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sharp": "^0.34.2",
+    "stripe": "^18.2.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^9",
+    "eslint-config-next": "^15.3.4",
+    "prisma": "^6.9.0"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  }
+}
