@@ -72,7 +72,7 @@ export default function BannerSlider() {
         {/* Content */}
         <div className="hero-content">
           <div className="hero-text" style={{ animation: 'slideUp 0.6s ease' }}>
-            <h2>{slide.headline}</h2>
+            <h1>{slide.headline}</h1>
             <p>{slide.subline}</p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <Link href={slide.href} className="btn btn-primary btn-lg" id={`banner-cta-${slide.id}`}>
